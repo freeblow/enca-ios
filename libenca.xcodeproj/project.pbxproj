@@ -1,0 +1,1773 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		004B30AD22422F6300621902 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 004B30AC22422F6300621902 /* AppDelegate.m */; };
+		004B30B022422F6300621902 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 004B30AF22422F6300621902 /* ViewController.m */; };
+		004B30B322422F6300621902 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 004B30B122422F6300621902 /* Main.storyboard */; };
+		004B30B522422F6500621902 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 004B30B422422F6500621902 /* Assets.xcassets */; };
+		004B30B822422F6500621902 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 004B30B622422F6500621902 /* LaunchScreen.storyboard */; };
+		004B30BB22422F6500621902 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 004B30BA22422F6500621902 /* main.m */; };
+		004B30C522422F6500621902 /* TestEncaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 004B30C422422F6500621902 /* TestEncaTests.m */; };
+		004B30D022422F6500621902 /* TestEncaUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 004B30CF22422F6500621902 /* TestEncaUITests.m */; };
+		004B30DB22422F7500621902 /* libenca-ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 004C323C223A573200C29695 /* libenca-ios.framework */; };
+		004B30E322431C7600621902 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 004B30E222431C7600621902 /* main.m */; };
+		004B30FD224323B400621902 /* libenca_mac.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 004B30F4224323B400621902 /* libenca_mac.framework */; };
+		004B3102224323B400621902 /* libenca_macTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 004B3101224323B400621902 /* libenca_macTests.m */; };
+		004B3104224323B400621902 /* libenca_mac.h in Headers */ = {isa = PBXBuildFile; fileRef = 004B30F6224323B400621902 /* libenca_mac.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		004B3115224323DD00621902 /* convert_iconv.c in Sources */ = {isa = PBXBuildFile; fileRef = 004B310B224323DC00621902 /* convert_iconv.c */; };
+		004B3116224323DD00621902 /* convert_recode.c in Sources */ = {isa = PBXBuildFile; fileRef = 004B310C224323DC00621902 /* convert_recode.c */; };
+		004B3118224323DD00621902 /* filebuf.c in Sources */ = {isa = PBXBuildFile; fileRef = 004B310E224323DC00621902 /* filebuf.c */; };
+		004B3119224323DD00621902 /* options.c in Sources */ = {isa = PBXBuildFile; fileRef = 004B310F224323DC00621902 /* options.c */; };
+		004B311B224323DD00621902 /* common.h in Headers */ = {isa = PBXBuildFile; fileRef = 004B3111224323DC00621902 /* common.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		004B311C224323DD00621902 /* convert_extern.c in Sources */ = {isa = PBXBuildFile; fileRef = 004B3112224323DD00621902 /* convert_extern.c */; };
+		004B311D224323DD00621902 /* getopt_long.c in Sources */ = {isa = PBXBuildFile; fileRef = 004B3113224323DD00621902 /* getopt_long.c */; };
+		004B311E224323DD00621902 /* convert.c in Sources */ = {isa = PBXBuildFile; fileRef = 004B3114224323DD00621902 /* convert.c */; };
+		004B313A2243243200621902 /* filters.c in Sources */ = {isa = PBXBuildFile; fileRef = 004B311F2243243000621902 /* filters.c */; };
+		004B313B2243243200621902 /* common.c in Sources */ = {isa = PBXBuildFile; fileRef = 004B31202243243000621902 /* common.c */; };
+		004B313C2243243200621902 /* ctype.c in Sources */ = {isa = PBXBuildFile; fileRef = 004B31212243243000621902 /* ctype.c */; };
+		004B313D2243243200621902 /* internal.h in Headers */ = {isa = PBXBuildFile; fileRef = 004B31222243243000621902 /* internal.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		004B313E2243243200621902 /* lang_cs.c in Sources */ = {isa = PBXBuildFile; fileRef = 004B31232243243000621902 /* lang_cs.c */; };
+		004B313F2243243200621902 /* encnames.c in Sources */ = {isa = PBXBuildFile; fileRef = 004B31242243243000621902 /* encnames.c */; };
+		004B31402243243200621902 /* lang_pl.c in Sources */ = {isa = PBXBuildFile; fileRef = 004B31252243243000621902 /* lang_pl.c */; };
+		004B31412243243200621902 /* lang_zh.c in Sources */ = {isa = PBXBuildFile; fileRef = 004B31262243243100621902 /* lang_zh.c */; };
+		004B31432243243200621902 /* lang_be.c in Sources */ = {isa = PBXBuildFile; fileRef = 004B31282243243100621902 /* lang_be.c */; };
+		004B31442243243200621902 /* lang_sk.c in Sources */ = {isa = PBXBuildFile; fileRef = 004B31292243243100621902 /* lang_sk.c */; };
+		004B31452243243200621902 /* utf8_double.c in Sources */ = {isa = PBXBuildFile; fileRef = 004B312A2243243100621902 /* utf8_double.c */; };
+		004B31462243243200621902 /* pair.c in Sources */ = {isa = PBXBuildFile; fileRef = 004B312B2243243100621902 /* pair.c */; };
+		004B31472243243200621902 /* multibyte.c in Sources */ = {isa = PBXBuildFile; fileRef = 004B312C2243243100621902 /* multibyte.c */; };
+		004B31482243243200621902 /* lang_sl.c in Sources */ = {isa = PBXBuildFile; fileRef = 004B312D2243243100621902 /* lang_sl.c */; };
+		004B31492243243200621902 /* lang_et.c in Sources */ = {isa = PBXBuildFile; fileRef = 004B312E2243243100621902 /* lang_et.c */; };
+		004B314A2243243200621902 /* lang_lt.c in Sources */ = {isa = PBXBuildFile; fileRef = 004B312F2243243100621902 /* lang_lt.c */; };
+		004B314B2243243200621902 /* guess.c in Sources */ = {isa = PBXBuildFile; fileRef = 004B31302243243100621902 /* guess.c */; };
+		004B314C2243243200621902 /* lang_uk.c in Sources */ = {isa = PBXBuildFile; fileRef = 004B31312243243100621902 /* lang_uk.c */; };
+		004B314D2243243200621902 /* lang_ru.c in Sources */ = {isa = PBXBuildFile; fileRef = 004B31322243243100621902 /* lang_ru.c */; };
+		004B314E2243243200621902 /* lang.c in Sources */ = {isa = PBXBuildFile; fileRef = 004B31332243243100621902 /* lang.c */; };
+		004B314F2243243200621902 /* lang_bg.c in Sources */ = {isa = PBXBuildFile; fileRef = 004B31342243243200621902 /* lang_bg.c */; };
+		004B31502243243200621902 /* lang_hr.c in Sources */ = {isa = PBXBuildFile; fileRef = 004B31352243243200621902 /* lang_hr.c */; };
+		004B31512243243200621902 /* lang_hu.c in Sources */ = {isa = PBXBuildFile; fileRef = 004B31362243243200621902 /* lang_hu.c */; };
+		004B31522243243200621902 /* enca.h in Headers */ = {isa = PBXBuildFile; fileRef = 004B31372243243200621902 /* enca.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		004B31532243243200621902 /* unicodemap.c in Sources */ = {isa = PBXBuildFile; fileRef = 004B31382243243200621902 /* unicodemap.c */; };
+		004B31542243243200621902 /* lang_lv.c in Sources */ = {isa = PBXBuildFile; fileRef = 004B31392243243200621902 /* lang_lv.c */; };
+		004B3157224324FE00621902 /* iconvenc.h in Headers */ = {isa = PBXBuildFile; fileRef = 004B3155224324FE00621902 /* iconvenc.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		004B315A2243250500621902 /* config.h in Headers */ = {isa = PBXBuildFile; fileRef = 004B31592243250500621902 /* config.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		004B315D22432B2F00621902 /* COPYING.c in Sources */ = {isa = PBXBuildFile; fileRef = 004B315B22432B2F00621902 /* COPYING.c */; };
+		004B315E22432B2F00621902 /* HELP.c in Sources */ = {isa = PBXBuildFile; fileRef = 004B315C22432B2F00621902 /* HELP.c */; };
+		004B3162224336DD00621902 /* libiconv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 004B3161224336DD00621902 /* libiconv.tbd */; };
+		004B31642243373900621902 /* locale_detect.c in Sources */ = {isa = PBXBuildFile; fileRef = 004B31632243373800621902 /* locale_detect.c */; };
+		004B3166224337C800621902 /* libenca_mac.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 004B30F4224323B400621902 /* libenca_mac.framework */; };
+		004B316B22433BBE00621902 /* convert_iconv.c in Sources */ = {isa = PBXBuildFile; fileRef = 004B316922433BBE00621902 /* convert_iconv.c */; };
+		004B316C22433BBE00621902 /* iconvenc.h in Headers */ = {isa = PBXBuildFile; fileRef = 004B316A22433BBE00621902 /* iconvenc.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		004B316E22447DCC00621902 /* readme.md in Resources */ = {isa = PBXBuildFile; fileRef = 004B316D22447DCC00621902 /* readme.md */; };
+		004B31702244838200621902 /* options.c in Sources */ = {isa = PBXBuildFile; fileRef = 004B316F2244838200621902 /* options.c */; };
+		004B31722244838E00621902 /* enca.c in Sources */ = {isa = PBXBuildFile; fileRef = 004B31712244838E00621902 /* enca.c */; };
+		004B31742244845400621902 /* COPYING.c in Sources */ = {isa = PBXBuildFile; fileRef = 004B31732244845400621902 /* COPYING.c */; };
+		004B31762244D65A00621902 /* getopt.h in Headers */ = {isa = PBXBuildFile; fileRef = 004B31752244D65A00621902 /* getopt.h */; };
+		004B317A2244D68E00621902 /* enca.c in Sources */ = {isa = PBXBuildFile; fileRef = 004B31792244D68D00621902 /* enca.c */; };
+		004C3246223A573200C29695 /* libenca-ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 004C323C223A573200C29695 /* libenca-ios.framework */; };
+		004C324B223A573200C29695 /* libencaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 004C324A223A573200C29695 /* libencaTests.m */; };
+		004C324D223A573200C29695 /* libenca.h in Headers */ = {isa = PBXBuildFile; fileRef = 004C323F223A573200C29695 /* libenca.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		004C325B223A575500C29695 /* convert_recode.c in Sources */ = {isa = PBXBuildFile; fileRef = 004C3256223A575400C29695 /* convert_recode.c */; };
+		004C325C223A575500C29695 /* convert.c in Sources */ = {isa = PBXBuildFile; fileRef = 004C3257223A575400C29695 /* convert.c */; };
+		004C325D223A575500C29695 /* common.h in Headers */ = {isa = PBXBuildFile; fileRef = 004C3258223A575400C29695 /* common.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		004C325E223A575500C29695 /* convert_extern.c in Sources */ = {isa = PBXBuildFile; fileRef = 004C3259223A575400C29695 /* convert_extern.c */; };
+		004C325F223A575500C29695 /* convert_iconv.c in Sources */ = {isa = PBXBuildFile; fileRef = 004C325A223A575400C29695 /* convert_iconv.c */; };
+		004C3267223A576D00C29695 /* HELP.c in Sources */ = {isa = PBXBuildFile; fileRef = 004C3260223A576C00C29695 /* HELP.c */; };
+		004C3268223A576D00C29695 /* locale_detect.c in Sources */ = {isa = PBXBuildFile; fileRef = 004C3261223A576C00C29695 /* locale_detect.c */; };
+		004C326B223A576D00C29695 /* filebuf.c in Sources */ = {isa = PBXBuildFile; fileRef = 004C3264223A576C00C29695 /* filebuf.c */; };
+		004C3272223A57CE00C29695 /* ctype.c in Sources */ = {isa = PBXBuildFile; fileRef = 004C326F223A57CE00C29695 /* ctype.c */; };
+		004C3273223A57CE00C29695 /* enca.h in Headers */ = {isa = PBXBuildFile; fileRef = 004C3270223A57CE00C29695 /* enca.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		004C3275223A57E000C29695 /* encnames.c in Sources */ = {isa = PBXBuildFile; fileRef = 004C3274223A57E000C29695 /* encnames.c */; };
+		004C3277223A57E600C29695 /* filters.c in Sources */ = {isa = PBXBuildFile; fileRef = 004C3276223A57E500C29695 /* filters.c */; };
+		004C3279223A57EA00C29695 /* guess.c in Sources */ = {isa = PBXBuildFile; fileRef = 004C3278223A57EA00C29695 /* guess.c */; };
+		004C327B223A57F200C29695 /* internal.h in Headers */ = {isa = PBXBuildFile; fileRef = 004C327A223A57F200C29695 /* internal.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		004C328F223A581A00C29695 /* lang_be.c in Sources */ = {isa = PBXBuildFile; fileRef = 004C327C223A581800C29695 /* lang_be.c */; };
+		004C3290223A581A00C29695 /* unicodemap.c in Sources */ = {isa = PBXBuildFile; fileRef = 004C327D223A581900C29695 /* unicodemap.c */; };
+		004C3291223A581A00C29695 /* utf8_double.c in Sources */ = {isa = PBXBuildFile; fileRef = 004C327E223A581900C29695 /* utf8_double.c */; };
+		004C3292223A581A00C29695 /* lang_zh.c in Sources */ = {isa = PBXBuildFile; fileRef = 004C327F223A581900C29695 /* lang_zh.c */; };
+		004C3293223A581A00C29695 /* lang_lt.c in Sources */ = {isa = PBXBuildFile; fileRef = 004C3280223A581900C29695 /* lang_lt.c */; };
+		004C3294223A581A00C29695 /* lang_hu.c in Sources */ = {isa = PBXBuildFile; fileRef = 004C3281223A581900C29695 /* lang_hu.c */; };
+		004C3295223A581A00C29695 /* lang_ru.c in Sources */ = {isa = PBXBuildFile; fileRef = 004C3282223A581900C29695 /* lang_ru.c */; };
+		004C3296223A581A00C29695 /* lang_pl.c in Sources */ = {isa = PBXBuildFile; fileRef = 004C3283223A581900C29695 /* lang_pl.c */; };
+		004C3297223A581A00C29695 /* lang_hr.c in Sources */ = {isa = PBXBuildFile; fileRef = 004C3284223A581900C29695 /* lang_hr.c */; };
+		004C3298223A581A00C29695 /* lang_sk.c in Sources */ = {isa = PBXBuildFile; fileRef = 004C3285223A581900C29695 /* lang_sk.c */; };
+		004C3299223A581A00C29695 /* lang_uk.c in Sources */ = {isa = PBXBuildFile; fileRef = 004C3286223A581900C29695 /* lang_uk.c */; };
+		004C329A223A581A00C29695 /* lang_lv.c in Sources */ = {isa = PBXBuildFile; fileRef = 004C3287223A581900C29695 /* lang_lv.c */; };
+		004C329B223A581A00C29695 /* lang.c in Sources */ = {isa = PBXBuildFile; fileRef = 004C3288223A581900C29695 /* lang.c */; };
+		004C329C223A581A00C29695 /* lang_bg.c in Sources */ = {isa = PBXBuildFile; fileRef = 004C3289223A581900C29695 /* lang_bg.c */; };
+		004C329D223A581A00C29695 /* multibyte.c in Sources */ = {isa = PBXBuildFile; fileRef = 004C328A223A581A00C29695 /* multibyte.c */; };
+		004C329E223A581A00C29695 /* lang_sl.c in Sources */ = {isa = PBXBuildFile; fileRef = 004C328B223A581A00C29695 /* lang_sl.c */; };
+		004C329F223A581A00C29695 /* lang_et.c in Sources */ = {isa = PBXBuildFile; fileRef = 004C328C223A581A00C29695 /* lang_et.c */; };
+		004C32A0223A581A00C29695 /* lang_cs.c in Sources */ = {isa = PBXBuildFile; fileRef = 004C328D223A581A00C29695 /* lang_cs.c */; };
+		004C32A1223A581A00C29695 /* pair.c in Sources */ = {isa = PBXBuildFile; fileRef = 004C328E223A581A00C29695 /* pair.c */; };
+		004C32A8223A586500C29695 /* zh_weight_gbk.h in Headers */ = {isa = PBXBuildFile; fileRef = 004C32A3223A586400C29695 /* zh_weight_gbk.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		004C32A9223A586500C29695 /* chinese.h in Headers */ = {isa = PBXBuildFile; fileRef = 004C32A4223A586400C29695 /* chinese.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		004C32AA223A586500C29695 /* zh_weight_big5.h in Headers */ = {isa = PBXBuildFile; fileRef = 004C32A5223A586400C29695 /* zh_weight_big5.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		004C32AB223A586500C29695 /* zh_weight_gb.txt in Resources */ = {isa = PBXBuildFile; fileRef = 004C32A6223A586400C29695 /* zh_weight_gb.txt */; };
+		004C32AC223A586500C29695 /* zh_weight_big5.txt in Resources */ = {isa = PBXBuildFile; fileRef = 004C32A7223A586400C29695 /* zh_weight_big5.txt */; };
+		004C32B0223A590800C29695 /* libc.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 004C32AF223A590800C29695 /* libc.tbd */; };
+		004C32B7223A599B00C29695 /* croatian.h in Headers */ = {isa = PBXBuildFile; fileRef = 004C32B3223A599B00C29695 /* croatian.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		004C32BF223A59BC00C29695 /* estonian.h in Headers */ = {isa = PBXBuildFile; fileRef = 004C32BB223A59BC00C29695 /* estonian.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		004C32C9223A59CC00C29695 /* latvian.h in Headers */ = {isa = PBXBuildFile; fileRef = 004C32C5223A59CC00C29695 /* latvian.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		004C32D1223A59E100C29695 /* hungarian.h in Headers */ = {isa = PBXBuildFile; fileRef = 004C32CD223A59E100C29695 /* hungarian.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		004C32E1223A59EB00C29695 /* belarusian.h in Headers */ = {isa = PBXBuildFile; fileRef = 004C32DB223A59EB00C29695 /* belarusian.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		004C32EB223A59F000C29695 /* bulgarian.h in Headers */ = {isa = PBXBuildFile; fileRef = 004C32E6223A59F000C29695 /* bulgarian.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		004C32F2223A59FD00C29695 /* czech.h in Headers */ = {isa = PBXBuildFile; fileRef = 004C32EE223A59FD00C29695 /* czech.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		004C32FE223A5A0D00C29695 /* lithuanian.h in Headers */ = {isa = PBXBuildFile; fileRef = 004C32FA223A5A0D00C29695 /* lithuanian.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		004C3306223A5A1C00C29695 /* polish.h in Headers */ = {isa = PBXBuildFile; fileRef = 004C3302223A5A1C00C29695 /* polish.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		004C330F223A5A2200C29695 /* russian.h in Headers */ = {isa = PBXBuildFile; fileRef = 004C330A223A5A2200C29695 /* russian.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		004C3318223A5A2E00C29695 /* slovak.h in Headers */ = {isa = PBXBuildFile; fileRef = 004C3314223A5A2D00C29695 /* slovak.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		004C3324223A5A3400C29695 /* ukrainian.h in Headers */ = {isa = PBXBuildFile; fileRef = 004C331F223A5A3400C29695 /* ukrainian.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		004C332C223A5A3A00C29695 /* slovene.h in Headers */ = {isa = PBXBuildFile; fileRef = 004C3328223A5A3A00C29695 /* slovene.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		004C3331223A5F1400C29695 /* config.h in Headers */ = {isa = PBXBuildFile; fileRef = 004C3330223A5F1400C29695 /* config.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		004C3334223A60D200C29695 /* encodings.h in Headers */ = {isa = PBXBuildFile; fileRef = 004C3333223A60D200C29695 /* encodings.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		004C335C2241DF2A00C29695 /* common.c in Sources */ = {isa = PBXBuildFile; fileRef = 004C335B2241DF2900C29695 /* common.c */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		004B30C122422F6500621902 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 004C3233223A573200C29695 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 004B30A822422F6300621902;
+			remoteInfo = TestEnca;
+		};
+		004B30CC22422F6500621902 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 004C3233223A573200C29695 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 004B30A822422F6300621902;
+			remoteInfo = TestEnca;
+		};
+		004B30FE224323B400621902 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 004C3233223A573200C29695 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 004B30F3224323B400621902;
+			remoteInfo = "libenca-mac";
+		};
+		004B31672243388600621902 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 004C3233223A573200C29695 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 004B30F3224323B400621902;
+			remoteInfo = "libenca-mac";
+		};
+		004C3247223A573200C29695 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 004C3233223A573200C29695 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 004C323B223A573200C29695;
+			remoteInfo = libenca;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		004B30DE22431C7600621902 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		004B30A922422F6300621902 /* TestEnca.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestEnca.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		004B30AB22422F6300621902 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		004B30AC22422F6300621902 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		004B30AE22422F6300621902 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		004B30AF22422F6300621902 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		004B30B222422F6300621902 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		004B30B422422F6500621902 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		004B30B722422F6500621902 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		004B30B922422F6500621902 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		004B30BA22422F6500621902 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		004B30C022422F6500621902 /* TestEncaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestEncaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		004B30C422422F6500621902 /* TestEncaTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestEncaTests.m; sourceTree = "<group>"; };
+		004B30C622422F6500621902 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		004B30CB22422F6500621902 /* TestEncaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestEncaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		004B30CF22422F6500621902 /* TestEncaUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestEncaUITests.m; sourceTree = "<group>"; };
+		004B30D122422F6500621902 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		004B30E022431C7600621902 /* test-mac-enca */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "test-mac-enca"; sourceTree = BUILT_PRODUCTS_DIR; };
+		004B30E222431C7600621902 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		004B30ED2243213000621902 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		004B30F4224323B400621902 /* libenca_mac.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = libenca_mac.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		004B30F6224323B400621902 /* libenca_mac.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = libenca_mac.h; sourceTree = "<group>"; };
+		004B30F7224323B400621902 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		004B30FC224323B400621902 /* libenca-macTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "libenca-macTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		004B3101224323B400621902 /* libenca_macTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = libenca_macTests.m; sourceTree = "<group>"; };
+		004B3103224323B400621902 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		004B310B224323DC00621902 /* convert_iconv.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = convert_iconv.c; sourceTree = "<group>"; };
+		004B310C224323DC00621902 /* convert_recode.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = convert_recode.c; sourceTree = "<group>"; };
+		004B310E224323DC00621902 /* filebuf.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = filebuf.c; sourceTree = "<group>"; };
+		004B310F224323DC00621902 /* options.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = options.c; sourceTree = "<group>"; };
+		004B3111224323DC00621902 /* common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = common.h; sourceTree = "<group>"; };
+		004B3112224323DD00621902 /* convert_extern.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = convert_extern.c; sourceTree = "<group>"; };
+		004B3113224323DD00621902 /* getopt_long.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = getopt_long.c; sourceTree = "<group>"; };
+		004B3114224323DD00621902 /* convert.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = convert.c; sourceTree = "<group>"; };
+		004B311F2243243000621902 /* filters.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = filters.c; sourceTree = "<group>"; };
+		004B31202243243000621902 /* common.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = common.c; sourceTree = "<group>"; };
+		004B31212243243000621902 /* ctype.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ctype.c; sourceTree = "<group>"; };
+		004B31222243243000621902 /* internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = internal.h; sourceTree = "<group>"; };
+		004B31232243243000621902 /* lang_cs.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = lang_cs.c; sourceTree = "<group>"; };
+		004B31242243243000621902 /* encnames.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = encnames.c; sourceTree = "<group>"; };
+		004B31252243243000621902 /* lang_pl.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = lang_pl.c; sourceTree = "<group>"; };
+		004B31262243243100621902 /* lang_zh.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = lang_zh.c; sourceTree = "<group>"; };
+		004B31282243243100621902 /* lang_be.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = lang_be.c; sourceTree = "<group>"; };
+		004B31292243243100621902 /* lang_sk.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = lang_sk.c; sourceTree = "<group>"; };
+		004B312A2243243100621902 /* utf8_double.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = utf8_double.c; sourceTree = "<group>"; };
+		004B312B2243243100621902 /* pair.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pair.c; sourceTree = "<group>"; };
+		004B312C2243243100621902 /* multibyte.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = multibyte.c; sourceTree = "<group>"; };
+		004B312D2243243100621902 /* lang_sl.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = lang_sl.c; sourceTree = "<group>"; };
+		004B312E2243243100621902 /* lang_et.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = lang_et.c; sourceTree = "<group>"; };
+		004B312F2243243100621902 /* lang_lt.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = lang_lt.c; sourceTree = "<group>"; };
+		004B31302243243100621902 /* guess.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = guess.c; sourceTree = "<group>"; };
+		004B31312243243100621902 /* lang_uk.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = lang_uk.c; sourceTree = "<group>"; };
+		004B31322243243100621902 /* lang_ru.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = lang_ru.c; sourceTree = "<group>"; };
+		004B31332243243100621902 /* lang.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = lang.c; sourceTree = "<group>"; };
+		004B31342243243200621902 /* lang_bg.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = lang_bg.c; sourceTree = "<group>"; };
+		004B31352243243200621902 /* lang_hr.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = lang_hr.c; sourceTree = "<group>"; };
+		004B31362243243200621902 /* lang_hu.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = lang_hu.c; sourceTree = "<group>"; };
+		004B31372243243200621902 /* enca.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = enca.h; sourceTree = "<group>"; };
+		004B31382243243200621902 /* unicodemap.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = unicodemap.c; sourceTree = "<group>"; };
+		004B31392243243200621902 /* lang_lv.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = lang_lv.c; sourceTree = "<group>"; };
+		004B3155224324FE00621902 /* iconvenc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iconvenc.h; sourceTree = "<group>"; };
+		004B31592243250500621902 /* config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = config.h; sourceTree = "<group>"; };
+		004B315B22432B2F00621902 /* COPYING.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = COPYING.c; sourceTree = "<group>"; };
+		004B315C22432B2F00621902 /* HELP.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = HELP.c; sourceTree = "<group>"; };
+		004B3161224336DD00621902 /* libiconv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.tbd; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/usr/lib/libiconv.tbd; sourceTree = DEVELOPER_DIR; };
+		004B31632243373800621902 /* locale_detect.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = locale_detect.c; sourceTree = "<group>"; };
+		004B316922433BBE00621902 /* convert_iconv.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = convert_iconv.c; path = "libenca-mac/convert_iconv.c"; sourceTree = SOURCE_ROOT; };
+		004B316A22433BBE00621902 /* iconvenc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = iconvenc.h; path = "libenca-mac/iconvenc.h"; sourceTree = SOURCE_ROOT; };
+		004B316D22447DCC00621902 /* readme.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = readme.md; sourceTree = "<group>"; };
+		004B316F2244838200621902 /* options.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = options.c; sourceTree = "<group>"; };
+		004B31712244838E00621902 /* enca.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = enca.c; sourceTree = "<group>"; };
+		004B31732244845400621902 /* COPYING.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = COPYING.c; sourceTree = "<group>"; };
+		004B31752244D65A00621902 /* getopt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = getopt.h; sourceTree = "<group>"; };
+		004B31792244D68D00621902 /* enca.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = enca.c; sourceTree = "<group>"; };
+		004C323C223A573200C29695 /* libenca-ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "libenca-ios.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		004C323F223A573200C29695 /* libenca.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = libenca.h; sourceTree = "<group>"; };
+		004C3240223A573200C29695 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		004C3245223A573200C29695 /* libencaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = libencaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		004C324A223A573200C29695 /* libencaTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = libencaTests.m; sourceTree = "<group>"; };
+		004C324C223A573200C29695 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		004C3256223A575400C29695 /* convert_recode.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = convert_recode.c; sourceTree = "<group>"; };
+		004C3257223A575400C29695 /* convert.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = convert.c; sourceTree = "<group>"; };
+		004C3258223A575400C29695 /* common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = common.h; sourceTree = "<group>"; };
+		004C3259223A575400C29695 /* convert_extern.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = convert_extern.c; sourceTree = "<group>"; };
+		004C325A223A575400C29695 /* convert_iconv.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = convert_iconv.c; sourceTree = "<group>"; };
+		004C3260223A576C00C29695 /* HELP.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = HELP.c; sourceTree = "<group>"; };
+		004C3261223A576C00C29695 /* locale_detect.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = locale_detect.c; sourceTree = "<group>"; };
+		004C3264223A576C00C29695 /* filebuf.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = filebuf.c; sourceTree = "<group>"; };
+		004C326F223A57CE00C29695 /* ctype.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ctype.c; sourceTree = "<group>"; };
+		004C3270223A57CE00C29695 /* enca.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = enca.h; sourceTree = "<group>"; };
+		004C3274223A57E000C29695 /* encnames.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = encnames.c; sourceTree = "<group>"; };
+		004C3276223A57E500C29695 /* filters.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = filters.c; sourceTree = "<group>"; };
+		004C3278223A57EA00C29695 /* guess.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = guess.c; sourceTree = "<group>"; };
+		004C327A223A57F200C29695 /* internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = internal.h; sourceTree = "<group>"; };
+		004C327C223A581800C29695 /* lang_be.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = lang_be.c; sourceTree = "<group>"; };
+		004C327D223A581900C29695 /* unicodemap.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = unicodemap.c; sourceTree = "<group>"; };
+		004C327E223A581900C29695 /* utf8_double.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = utf8_double.c; sourceTree = "<group>"; };
+		004C327F223A581900C29695 /* lang_zh.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = lang_zh.c; sourceTree = "<group>"; };
+		004C3280223A581900C29695 /* lang_lt.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = lang_lt.c; sourceTree = "<group>"; };
+		004C3281223A581900C29695 /* lang_hu.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = lang_hu.c; sourceTree = "<group>"; };
+		004C3282223A581900C29695 /* lang_ru.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = lang_ru.c; sourceTree = "<group>"; };
+		004C3283223A581900C29695 /* lang_pl.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = lang_pl.c; sourceTree = "<group>"; };
+		004C3284223A581900C29695 /* lang_hr.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = lang_hr.c; sourceTree = "<group>"; };
+		004C3285223A581900C29695 /* lang_sk.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = lang_sk.c; sourceTree = "<group>"; };
+		004C3286223A581900C29695 /* lang_uk.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = lang_uk.c; sourceTree = "<group>"; };
+		004C3287223A581900C29695 /* lang_lv.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = lang_lv.c; sourceTree = "<group>"; };
+		004C3288223A581900C29695 /* lang.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = lang.c; sourceTree = "<group>"; };
+		004C3289223A581900C29695 /* lang_bg.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = lang_bg.c; sourceTree = "<group>"; };
+		004C328A223A581A00C29695 /* multibyte.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = multibyte.c; sourceTree = "<group>"; };
+		004C328B223A581A00C29695 /* lang_sl.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = lang_sl.c; sourceTree = "<group>"; };
+		004C328C223A581A00C29695 /* lang_et.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = lang_et.c; sourceTree = "<group>"; };
+		004C328D223A581A00C29695 /* lang_cs.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = lang_cs.c; sourceTree = "<group>"; };
+		004C328E223A581A00C29695 /* pair.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pair.c; sourceTree = "<group>"; };
+		004C32A3223A586400C29695 /* zh_weight_gbk.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zh_weight_gbk.h; sourceTree = "<group>"; };
+		004C32A4223A586400C29695 /* chinese.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = chinese.h; sourceTree = "<group>"; };
+		004C32A5223A586400C29695 /* zh_weight_big5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zh_weight_big5.h; sourceTree = "<group>"; };
+		004C32A6223A586400C29695 /* zh_weight_gb.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = zh_weight_gb.txt; sourceTree = "<group>"; };
+		004C32A7223A586400C29695 /* zh_weight_big5.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = zh_weight_big5.txt; sourceTree = "<group>"; };
+		004C32AF223A590800C29695 /* libc.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libc.tbd; path = usr/lib/libc.tbd; sourceTree = SDKROOT; };
+		004C32B3223A599B00C29695 /* croatian.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = croatian.h; sourceTree = "<group>"; };
+		004C32BB223A59BC00C29695 /* estonian.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = estonian.h; sourceTree = "<group>"; };
+		004C32C5223A59CC00C29695 /* latvian.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = latvian.h; sourceTree = "<group>"; };
+		004C32CD223A59E100C29695 /* hungarian.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hungarian.h; sourceTree = "<group>"; };
+		004C32DB223A59EB00C29695 /* belarusian.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = belarusian.h; sourceTree = "<group>"; };
+		004C32E6223A59F000C29695 /* bulgarian.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bulgarian.h; sourceTree = "<group>"; };
+		004C32EE223A59FD00C29695 /* czech.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = czech.h; sourceTree = "<group>"; };
+		004C32FA223A5A0D00C29695 /* lithuanian.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lithuanian.h; sourceTree = "<group>"; };
+		004C3302223A5A1C00C29695 /* polish.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = polish.h; sourceTree = "<group>"; };
+		004C330A223A5A2200C29695 /* russian.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = russian.h; sourceTree = "<group>"; };
+		004C3314223A5A2D00C29695 /* slovak.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = slovak.h; sourceTree = "<group>"; };
+		004C331F223A5A3400C29695 /* ukrainian.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ukrainian.h; sourceTree = "<group>"; };
+		004C3328223A5A3A00C29695 /* slovene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = slovene.h; sourceTree = "<group>"; };
+		004C3330223A5F1400C29695 /* config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = config.h; sourceTree = "<group>"; };
+		004C3333223A60D200C29695 /* encodings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = encodings.h; sourceTree = "<group>"; };
+		004C335B2241DF2900C29695 /* common.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = common.c; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		004B30A622422F6300621902 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				004B30DB22422F7500621902 /* libenca-ios.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		004B30BD22422F6500621902 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		004B30C822422F6500621902 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		004B30DD22431C7600621902 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				004B3166224337C800621902 /* libenca_mac.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		004B30F1224323B400621902 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				004B3162224336DD00621902 /* libiconv.tbd in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		004B30F9224323B400621902 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				004B30FD224323B400621902 /* libenca_mac.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		004C3239223A573200C29695 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				004C32B0223A590800C29695 /* libc.tbd in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		004C3242223A573200C29695 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				004C3246223A573200C29695 /* libenca-ios.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		004B30AA22422F6300621902 /* TestEnca */ = {
+			isa = PBXGroup;
+			children = (
+				004B30AB22422F6300621902 /* AppDelegate.h */,
+				004B30AC22422F6300621902 /* AppDelegate.m */,
+				004B30AE22422F6300621902 /* ViewController.h */,
+				004B30AF22422F6300621902 /* ViewController.m */,
+				004B30B122422F6300621902 /* Main.storyboard */,
+				004B30B422422F6500621902 /* Assets.xcassets */,
+				004B30B622422F6500621902 /* LaunchScreen.storyboard */,
+				004B30B922422F6500621902 /* Info.plist */,
+				004B30BA22422F6500621902 /* main.m */,
+				004B316D22447DCC00621902 /* readme.md */,
+			);
+			path = TestEnca;
+			sourceTree = "<group>";
+		};
+		004B30C322422F6500621902 /* TestEncaTests */ = {
+			isa = PBXGroup;
+			children = (
+				004B30C422422F6500621902 /* TestEncaTests.m */,
+				004B30C622422F6500621902 /* Info.plist */,
+			);
+			path = TestEncaTests;
+			sourceTree = "<group>";
+		};
+		004B30CE22422F6500621902 /* TestEncaUITests */ = {
+			isa = PBXGroup;
+			children = (
+				004B30CF22422F6500621902 /* TestEncaUITests.m */,
+				004B30D122422F6500621902 /* Info.plist */,
+			);
+			path = TestEncaUITests;
+			sourceTree = "<group>";
+		};
+		004B30E122431C7600621902 /* test-mac-enca */ = {
+			isa = PBXGroup;
+			children = (
+				004B30E222431C7600621902 /* main.m */,
+			);
+			path = "test-mac-enca";
+			sourceTree = "<group>";
+		};
+		004B30F5224323B400621902 /* libenca-mac */ = {
+			isa = PBXGroup;
+			children = (
+				004B315B22432B2F00621902 /* COPYING.c */,
+				004B31752244D65A00621902 /* getopt.h */,
+				004B315C22432B2F00621902 /* HELP.c */,
+				004B31592243250500621902 /* config.h */,
+				004B3155224324FE00621902 /* iconvenc.h */,
+				004B31202243243000621902 /* common.c */,
+				004B31212243243000621902 /* ctype.c */,
+				004B31792244D68D00621902 /* enca.c */,
+				004B31372243243200621902 /* enca.h */,
+				004B31242243243000621902 /* encnames.c */,
+				004B311F2243243000621902 /* filters.c */,
+				004B31302243243100621902 /* guess.c */,
+				004B31222243243000621902 /* internal.h */,
+				004B31282243243100621902 /* lang_be.c */,
+				004B31342243243200621902 /* lang_bg.c */,
+				004B31232243243000621902 /* lang_cs.c */,
+				004B312E2243243100621902 /* lang_et.c */,
+				004B31352243243200621902 /* lang_hr.c */,
+				004B31362243243200621902 /* lang_hu.c */,
+				004B312F2243243100621902 /* lang_lt.c */,
+				004B31392243243200621902 /* lang_lv.c */,
+				004B31252243243000621902 /* lang_pl.c */,
+				004B31322243243100621902 /* lang_ru.c */,
+				004B31292243243100621902 /* lang_sk.c */,
+				004B312D2243243100621902 /* lang_sl.c */,
+				004B31312243243100621902 /* lang_uk.c */,
+				004B31262243243100621902 /* lang_zh.c */,
+				004B31332243243100621902 /* lang.c */,
+				004B312C2243243100621902 /* multibyte.c */,
+				004B312B2243243100621902 /* pair.c */,
+				004B31382243243200621902 /* unicodemap.c */,
+				004B312A2243243100621902 /* utf8_double.c */,
+				004B3111224323DC00621902 /* common.h */,
+				004B31632243373800621902 /* locale_detect.c */,
+				004B3112224323DD00621902 /* convert_extern.c */,
+				004B310B224323DC00621902 /* convert_iconv.c */,
+				004B310C224323DC00621902 /* convert_recode.c */,
+				004B3114224323DD00621902 /* convert.c */,
+				004B310E224323DC00621902 /* filebuf.c */,
+				004B3113224323DD00621902 /* getopt_long.c */,
+				004B310F224323DC00621902 /* options.c */,
+				004B30F6224323B400621902 /* libenca_mac.h */,
+				004B30F7224323B400621902 /* Info.plist */,
+			);
+			path = "libenca-mac";
+			sourceTree = "<group>";
+		};
+		004B3100224323B400621902 /* libenca-macTests */ = {
+			isa = PBXGroup;
+			children = (
+				004B3101224323B400621902 /* libenca_macTests.m */,
+				004B3103224323B400621902 /* Info.plist */,
+			);
+			path = "libenca-macTests";
+			sourceTree = "<group>";
+		};
+		004C3232223A573200C29695 = {
+			isa = PBXGroup;
+			children = (
+				004C323E223A573200C29695 /* libenca */,
+				004C3249223A573200C29695 /* libencaTests */,
+				004B30AA22422F6300621902 /* TestEnca */,
+				004B30C322422F6500621902 /* TestEncaTests */,
+				004B30CE22422F6500621902 /* TestEncaUITests */,
+				004B30E122431C7600621902 /* test-mac-enca */,
+				004B30F5224323B400621902 /* libenca-mac */,
+				004B3100224323B400621902 /* libenca-macTests */,
+				004C323D223A573200C29695 /* Products */,
+				004C32AE223A590800C29695 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		004C323D223A573200C29695 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				004C323C223A573200C29695 /* libenca-ios.framework */,
+				004C3245223A573200C29695 /* libencaTests.xctest */,
+				004B30A922422F6300621902 /* TestEnca.app */,
+				004B30C022422F6500621902 /* TestEncaTests.xctest */,
+				004B30CB22422F6500621902 /* TestEncaUITests.xctest */,
+				004B30E022431C7600621902 /* test-mac-enca */,
+				004B30F4224323B400621902 /* libenca_mac.framework */,
+				004B30FC224323B400621902 /* libenca-macTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		004C323E223A573200C29695 /* libenca */ = {
+			isa = PBXGroup;
+			children = (
+				004C335F2242149F00C29695 /* lang */,
+				004C3332223A60CA00C29695 /* tools */,
+				004C3330223A5F1400C29695 /* config.h */,
+				004B316922433BBE00621902 /* convert_iconv.c */,
+				004B316A22433BBE00621902 /* iconvenc.h */,
+				004C335B2241DF2900C29695 /* common.c */,
+				004C32AD223A586A00C29695 /* data */,
+				004C328A223A581A00C29695 /* multibyte.c */,
+				004C328E223A581A00C29695 /* pair.c */,
+				004C327D223A581900C29695 /* unicodemap.c */,
+				004C327E223A581900C29695 /* utf8_double.c */,
+				004C3278223A57EA00C29695 /* guess.c */,
+				004C327A223A57F200C29695 /* internal.h */,
+				004C3274223A57E000C29695 /* encnames.c */,
+				004B316F2244838200621902 /* options.c */,
+				004C3276223A57E500C29695 /* filters.c */,
+				004C326F223A57CE00C29695 /* ctype.c */,
+				004C3270223A57CE00C29695 /* enca.h */,
+				004B31712244838E00621902 /* enca.c */,
+				004C3264223A576C00C29695 /* filebuf.c */,
+				004C3260223A576C00C29695 /* HELP.c */,
+				004B31732244845400621902 /* COPYING.c */,
+				004C3261223A576C00C29695 /* locale_detect.c */,
+				004C3258223A575400C29695 /* common.h */,
+				004C3259223A575400C29695 /* convert_extern.c */,
+				004C325A223A575400C29695 /* convert_iconv.c */,
+				004C3256223A575400C29695 /* convert_recode.c */,
+				004C3257223A575400C29695 /* convert.c */,
+				004C323F223A573200C29695 /* libenca.h */,
+				004C3240223A573200C29695 /* Info.plist */,
+			);
+			path = libenca;
+			sourceTree = "<group>";
+		};
+		004C3249223A573200C29695 /* libencaTests */ = {
+			isa = PBXGroup;
+			children = (
+				004C324A223A573200C29695 /* libencaTests.m */,
+				004C324C223A573200C29695 /* Info.plist */,
+			);
+			path = libencaTests;
+			sourceTree = "<group>";
+		};
+		004C32A2223A586400C29695 /* chinese */ = {
+			isa = PBXGroup;
+			children = (
+				004C32A3223A586400C29695 /* zh_weight_gbk.h */,
+				004C32A4223A586400C29695 /* chinese.h */,
+				004C32A5223A586400C29695 /* zh_weight_big5.h */,
+				004C32A6223A586400C29695 /* zh_weight_gb.txt */,
+				004C32A7223A586400C29695 /* zh_weight_big5.txt */,
+			);
+			path = chinese;
+			sourceTree = "<group>";
+		};
+		004C32AD223A586A00C29695 /* data */ = {
+			isa = PBXGroup;
+			children = (
+				004C3327223A5A3A00C29695 /* slovene */,
+				004C331C223A5A3400C29695 /* ukrainian */,
+				004C3313223A5A2D00C29695 /* slovak */,
+				004C3308223A5A2200C29695 /* russian */,
+				004C32FF223A5A1C00C29695 /* polish */,
+				004C32F6223A5A0C00C29695 /* lithuanian */,
+				004C32ED223A59FD00C29695 /* czech */,
+				004C32E2223A59F000C29695 /* bulgarian */,
+				004C32D5223A59EB00C29695 /* belarusian */,
+				004C32CC223A59E100C29695 /* hungarian */,
+				004C32C3223A59CC00C29695 /* latvian */,
+				004C32BA223A59BC00C29695 /* estonian */,
+				004C32B1223A599B00C29695 /* croatian */,
+				004C32A2223A586400C29695 /* chinese */,
+			);
+			path = data;
+			sourceTree = "<group>";
+		};
+		004C32AE223A590800C29695 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				004B3161224336DD00621902 /* libiconv.tbd */,
+				004B30ED2243213000621902 /* Foundation.framework */,
+				004C32AF223A590800C29695 /* libc.tbd */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		004C32B1223A599B00C29695 /* croatian */ = {
+			isa = PBXGroup;
+			children = (
+				004C32B3223A599B00C29695 /* croatian.h */,
+			);
+			path = croatian;
+			sourceTree = "<group>";
+		};
+		004C32BA223A59BC00C29695 /* estonian */ = {
+			isa = PBXGroup;
+			children = (
+				004C32BB223A59BC00C29695 /* estonian.h */,
+			);
+			path = estonian;
+			sourceTree = "<group>";
+		};
+		004C32C3223A59CC00C29695 /* latvian */ = {
+			isa = PBXGroup;
+			children = (
+				004C32C5223A59CC00C29695 /* latvian.h */,
+			);
+			path = latvian;
+			sourceTree = "<group>";
+		};
+		004C32CC223A59E100C29695 /* hungarian */ = {
+			isa = PBXGroup;
+			children = (
+				004C32CD223A59E100C29695 /* hungarian.h */,
+			);
+			path = hungarian;
+			sourceTree = "<group>";
+		};
+		004C32D5223A59EB00C29695 /* belarusian */ = {
+			isa = PBXGroup;
+			children = (
+				004C32DB223A59EB00C29695 /* belarusian.h */,
+			);
+			path = belarusian;
+			sourceTree = "<group>";
+		};
+		004C32E2223A59F000C29695 /* bulgarian */ = {
+			isa = PBXGroup;
+			children = (
+				004C32E6223A59F000C29695 /* bulgarian.h */,
+			);
+			path = bulgarian;
+			sourceTree = "<group>";
+		};
+		004C32ED223A59FD00C29695 /* czech */ = {
+			isa = PBXGroup;
+			children = (
+				004C32EE223A59FD00C29695 /* czech.h */,
+			);
+			path = czech;
+			sourceTree = "<group>";
+		};
+		004C32F6223A5A0C00C29695 /* lithuanian */ = {
+			isa = PBXGroup;
+			children = (
+				004C32FA223A5A0D00C29695 /* lithuanian.h */,
+			);
+			path = lithuanian;
+			sourceTree = "<group>";
+		};
+		004C32FF223A5A1C00C29695 /* polish */ = {
+			isa = PBXGroup;
+			children = (
+				004C3302223A5A1C00C29695 /* polish.h */,
+			);
+			path = polish;
+			sourceTree = "<group>";
+		};
+		004C3308223A5A2200C29695 /* russian */ = {
+			isa = PBXGroup;
+			children = (
+				004C330A223A5A2200C29695 /* russian.h */,
+			);
+			path = russian;
+			sourceTree = "<group>";
+		};
+		004C3313223A5A2D00C29695 /* slovak */ = {
+			isa = PBXGroup;
+			children = (
+				004C3314223A5A2D00C29695 /* slovak.h */,
+			);
+			path = slovak;
+			sourceTree = "<group>";
+		};
+		004C331C223A5A3400C29695 /* ukrainian */ = {
+			isa = PBXGroup;
+			children = (
+				004C331F223A5A3400C29695 /* ukrainian.h */,
+			);
+			path = ukrainian;
+			sourceTree = "<group>";
+		};
+		004C3327223A5A3A00C29695 /* slovene */ = {
+			isa = PBXGroup;
+			children = (
+				004C3328223A5A3A00C29695 /* slovene.h */,
+			);
+			path = slovene;
+			sourceTree = "<group>";
+		};
+		004C3332223A60CA00C29695 /* tools */ = {
+			isa = PBXGroup;
+			children = (
+				004C3333223A60D200C29695 /* encodings.h */,
+			);
+			path = tools;
+			sourceTree = "<group>";
+		};
+		004C335F2242149F00C29695 /* lang */ = {
+			isa = PBXGroup;
+			children = (
+				004C327C223A581800C29695 /* lang_be.c */,
+				004C3289223A581900C29695 /* lang_bg.c */,
+				004C328D223A581A00C29695 /* lang_cs.c */,
+				004C328C223A581A00C29695 /* lang_et.c */,
+				004C3284223A581900C29695 /* lang_hr.c */,
+				004C3281223A581900C29695 /* lang_hu.c */,
+				004C3280223A581900C29695 /* lang_lt.c */,
+				004C3287223A581900C29695 /* lang_lv.c */,
+				004C3283223A581900C29695 /* lang_pl.c */,
+				004C3282223A581900C29695 /* lang_ru.c */,
+				004C3285223A581900C29695 /* lang_sk.c */,
+				004C328B223A581A00C29695 /* lang_sl.c */,
+				004C3286223A581900C29695 /* lang_uk.c */,
+				004C327F223A581900C29695 /* lang_zh.c */,
+				004C3288223A581900C29695 /* lang.c */,
+			);
+			path = lang;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		004B30EF224323B400621902 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				004B31522243243200621902 /* enca.h in Headers */,
+				004B31762244D65A00621902 /* getopt.h in Headers */,
+				004B3104224323B400621902 /* libenca_mac.h in Headers */,
+				004B313D2243243200621902 /* internal.h in Headers */,
+				004B311B224323DD00621902 /* common.h in Headers */,
+				004B3157224324FE00621902 /* iconvenc.h in Headers */,
+				004B315A2243250500621902 /* config.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		004C3237223A573200C29695 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				004C32F2223A59FD00C29695 /* czech.h in Headers */,
+				004C3334223A60D200C29695 /* encodings.h in Headers */,
+				004C3306223A5A1C00C29695 /* polish.h in Headers */,
+				004C324D223A573200C29695 /* libenca.h in Headers */,
+				004C32B7223A599B00C29695 /* croatian.h in Headers */,
+				004C32D1223A59E100C29695 /* hungarian.h in Headers */,
+				004C3318223A5A2E00C29695 /* slovak.h in Headers */,
+				004C325D223A575500C29695 /* common.h in Headers */,
+				004C3324223A5A3400C29695 /* ukrainian.h in Headers */,
+				004C3331223A5F1400C29695 /* config.h in Headers */,
+				004C32BF223A59BC00C29695 /* estonian.h in Headers */,
+				004C3273223A57CE00C29695 /* enca.h in Headers */,
+				004C327B223A57F200C29695 /* internal.h in Headers */,
+				004C32C9223A59CC00C29695 /* latvian.h in Headers */,
+				004C32AA223A586500C29695 /* zh_weight_big5.h in Headers */,
+				004C330F223A5A2200C29695 /* russian.h in Headers */,
+				004C32EB223A59F000C29695 /* bulgarian.h in Headers */,
+				004C332C223A5A3A00C29695 /* slovene.h in Headers */,
+				004C32A8223A586500C29695 /* zh_weight_gbk.h in Headers */,
+				004C32E1223A59EB00C29695 /* belarusian.h in Headers */,
+				004B316C22433BBE00621902 /* iconvenc.h in Headers */,
+				004C32A9223A586500C29695 /* chinese.h in Headers */,
+				004C32FE223A5A0D00C29695 /* lithuanian.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		004B30A822422F6300621902 /* TestEnca */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 004B30D222422F6500621902 /* Build configuration list for PBXNativeTarget "TestEnca" */;
+			buildPhases = (
+				004B30A522422F6300621902 /* Sources */,
+				004B30A622422F6300621902 /* Frameworks */,
+				004B30A722422F6300621902 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TestEnca;
+			productName = TestEnca;
+			productReference = 004B30A922422F6300621902 /* TestEnca.app */;
+			productType = "com.apple.product-type.application";
+		};
+		004B30BF22422F6500621902 /* TestEncaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 004B30D522422F6500621902 /* Build configuration list for PBXNativeTarget "TestEncaTests" */;
+			buildPhases = (
+				004B30BC22422F6500621902 /* Sources */,
+				004B30BD22422F6500621902 /* Frameworks */,
+				004B30BE22422F6500621902 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				004B30C222422F6500621902 /* PBXTargetDependency */,
+			);
+			name = TestEncaTests;
+			productName = TestEncaTests;
+			productReference = 004B30C022422F6500621902 /* TestEncaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		004B30CA22422F6500621902 /* TestEncaUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 004B30D822422F6500621902 /* Build configuration list for PBXNativeTarget "TestEncaUITests" */;
+			buildPhases = (
+				004B30C722422F6500621902 /* Sources */,
+				004B30C822422F6500621902 /* Frameworks */,
+				004B30C922422F6500621902 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				004B30CD22422F6500621902 /* PBXTargetDependency */,
+			);
+			name = TestEncaUITests;
+			productName = TestEncaUITests;
+			productReference = 004B30CB22422F6500621902 /* TestEncaUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		004B30DF22431C7600621902 /* test-mac-enca */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 004B30E422431C7600621902 /* Build configuration list for PBXNativeTarget "test-mac-enca" */;
+			buildPhases = (
+				004B30DC22431C7600621902 /* Sources */,
+				004B30DD22431C7600621902 /* Frameworks */,
+				004B30DE22431C7600621902 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				004B31682243388600621902 /* PBXTargetDependency */,
+			);
+			name = "test-mac-enca";
+			productName = "test-mac-enca";
+			productReference = 004B30E022431C7600621902 /* test-mac-enca */;
+			productType = "com.apple.product-type.tool";
+		};
+		004B30F3224323B400621902 /* libenca-mac */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 004B3105224323B400621902 /* Build configuration list for PBXNativeTarget "libenca-mac" */;
+			buildPhases = (
+				004B30EF224323B400621902 /* Headers */,
+				004B30F0224323B400621902 /* Sources */,
+				004B30F1224323B400621902 /* Frameworks */,
+				004B30F2224323B400621902 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "libenca-mac";
+			productName = "libenca-mac";
+			productReference = 004B30F4224323B400621902 /* libenca_mac.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		004B30FB224323B400621902 /* libenca-macTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 004B3108224323B400621902 /* Build configuration list for PBXNativeTarget "libenca-macTests" */;
+			buildPhases = (
+				004B30F8224323B400621902 /* Sources */,
+				004B30F9224323B400621902 /* Frameworks */,
+				004B30FA224323B400621902 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				004B30FF224323B400621902 /* PBXTargetDependency */,
+			);
+			name = "libenca-macTests";
+			productName = "libenca-macTests";
+			productReference = 004B30FC224323B400621902 /* libenca-macTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		004C323B223A573200C29695 /* libenca */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 004C3250223A573200C29695 /* Build configuration list for PBXNativeTarget "libenca" */;
+			buildPhases = (
+				004C3237223A573200C29695 /* Headers */,
+				004C3238223A573200C29695 /* Sources */,
+				004C3239223A573200C29695 /* Frameworks */,
+				004C323A223A573200C29695 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = libenca;
+			productName = libenca;
+			productReference = 004C323C223A573200C29695 /* libenca-ios.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		004C3244223A573200C29695 /* libencaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 004C3253223A573200C29695 /* Build configuration list for PBXNativeTarget "libencaTests" */;
+			buildPhases = (
+				004C3241223A573200C29695 /* Sources */,
+				004C3242223A573200C29695 /* Frameworks */,
+				004C3243223A573200C29695 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				004C3248223A573200C29695 /* PBXTargetDependency */,
+			);
+			name = libencaTests;
+			productName = libencaTests;
+			productReference = 004C3245223A573200C29695 /* libencaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		004C3233223A573200C29695 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = freeblow;
+				TargetAttributes = {
+					004B30A822422F6300621902 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					004B30BF22422F6500621902 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 004B30A822422F6300621902;
+					};
+					004B30CA22422F6500621902 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 004B30A822422F6300621902;
+					};
+					004B30DF22431C7600621902 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					004B30F3224323B400621902 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					004B30FB224323B400621902 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					004C323B223A573200C29695 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					004C3244223A573200C29695 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = 004C3236223A573200C29695 /* Build configuration list for PBXProject "libenca" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 004C3232223A573200C29695;
+			productRefGroup = 004C323D223A573200C29695 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				004C323B223A573200C29695 /* libenca */,
+				004C3244223A573200C29695 /* libencaTests */,
+				004B30A822422F6300621902 /* TestEnca */,
+				004B30BF22422F6500621902 /* TestEncaTests */,
+				004B30CA22422F6500621902 /* TestEncaUITests */,
+				004B30DF22431C7600621902 /* test-mac-enca */,
+				004B30F3224323B400621902 /* libenca-mac */,
+				004B30FB224323B400621902 /* libenca-macTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		004B30A722422F6300621902 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				004B30B822422F6500621902 /* LaunchScreen.storyboard in Resources */,
+				004B30B522422F6500621902 /* Assets.xcassets in Resources */,
+				004B316E22447DCC00621902 /* readme.md in Resources */,
+				004B30B322422F6300621902 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		004B30BE22422F6500621902 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		004B30C922422F6500621902 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		004B30F2224323B400621902 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		004B30FA224323B400621902 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		004C323A223A573200C29695 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				004C32AB223A586500C29695 /* zh_weight_gb.txt in Resources */,
+				004C32AC223A586500C29695 /* zh_weight_big5.txt in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		004C3243223A573200C29695 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		004B30A522422F6300621902 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				004B30B022422F6300621902 /* ViewController.m in Sources */,
+				004B30BB22422F6500621902 /* main.m in Sources */,
+				004B30AD22422F6300621902 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		004B30BC22422F6500621902 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				004B30C522422F6500621902 /* TestEncaTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		004B30C722422F6500621902 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				004B30D022422F6500621902 /* TestEncaUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		004B30DC22431C7600621902 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				004B30E322431C7600621902 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		004B30F0224323B400621902 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				004B313E2243243200621902 /* lang_cs.c in Sources */,
+				004B31532243243200621902 /* unicodemap.c in Sources */,
+				004B31432243243200621902 /* lang_be.c in Sources */,
+				004B31402243243200621902 /* lang_pl.c in Sources */,
+				004B314F2243243200621902 /* lang_bg.c in Sources */,
+				004B3118224323DD00621902 /* filebuf.c in Sources */,
+				004B3115224323DD00621902 /* convert_iconv.c in Sources */,
+				004B31442243243200621902 /* lang_sk.c in Sources */,
+				004B31512243243200621902 /* lang_hu.c in Sources */,
+				004B311E224323DD00621902 /* convert.c in Sources */,
+				004B31462243243200621902 /* pair.c in Sources */,
+				004B313B2243243200621902 /* common.c in Sources */,
+				004B313F2243243200621902 /* encnames.c in Sources */,
+				004B313A2243243200621902 /* filters.c in Sources */,
+				004B315E22432B2F00621902 /* HELP.c in Sources */,
+				004B313C2243243200621902 /* ctype.c in Sources */,
+				004B3119224323DD00621902 /* options.c in Sources */,
+				004B3116224323DD00621902 /* convert_recode.c in Sources */,
+				004B314C2243243200621902 /* lang_uk.c in Sources */,
+				004B314B2243243200621902 /* guess.c in Sources */,
+				004B314A2243243200621902 /* lang_lt.c in Sources */,
+				004B311D224323DD00621902 /* getopt_long.c in Sources */,
+				004B314E2243243200621902 /* lang.c in Sources */,
+				004B31452243243200621902 /* utf8_double.c in Sources */,
+				004B31502243243200621902 /* lang_hr.c in Sources */,
+				004B314D2243243200621902 /* lang_ru.c in Sources */,
+				004B31642243373900621902 /* locale_detect.c in Sources */,
+				004B31482243243200621902 /* lang_sl.c in Sources */,
+				004B31492243243200621902 /* lang_et.c in Sources */,
+				004B311C224323DD00621902 /* convert_extern.c in Sources */,
+				004B317A2244D68E00621902 /* enca.c in Sources */,
+				004B31542243243200621902 /* lang_lv.c in Sources */,
+				004B31412243243200621902 /* lang_zh.c in Sources */,
+				004B31472243243200621902 /* multibyte.c in Sources */,
+				004B315D22432B2F00621902 /* COPYING.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		004B30F8224323B400621902 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				004B3102224323B400621902 /* libenca_macTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		004C3238223A573200C29695 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				004C3297223A581A00C29695 /* lang_hr.c in Sources */,
+				004C3291223A581A00C29695 /* utf8_double.c in Sources */,
+				004B31742244845400621902 /* COPYING.c in Sources */,
+				004C3267223A576D00C29695 /* HELP.c in Sources */,
+				004C329C223A581A00C29695 /* lang_bg.c in Sources */,
+				004B31702244838200621902 /* options.c in Sources */,
+				004C3290223A581A00C29695 /* unicodemap.c in Sources */,
+				004C3293223A581A00C29695 /* lang_lt.c in Sources */,
+				004C32A1223A581A00C29695 /* pair.c in Sources */,
+				004C328F223A581A00C29695 /* lang_be.c in Sources */,
+				004C325B223A575500C29695 /* convert_recode.c in Sources */,
+				004B31722244838E00621902 /* enca.c in Sources */,
+				004C3294223A581A00C29695 /* lang_hu.c in Sources */,
+				004C326B223A576D00C29695 /* filebuf.c in Sources */,
+				004C3275223A57E000C29695 /* encnames.c in Sources */,
+				004C325C223A575500C29695 /* convert.c in Sources */,
+				004C329E223A581A00C29695 /* lang_sl.c in Sources */,
+				004C3279223A57EA00C29695 /* guess.c in Sources */,
+				004C3296223A581A00C29695 /* lang_pl.c in Sources */,
+				004C32A0223A581A00C29695 /* lang_cs.c in Sources */,
+				004C3299223A581A00C29695 /* lang_uk.c in Sources */,
+				004C3292223A581A00C29695 /* lang_zh.c in Sources */,
+				004C329D223A581A00C29695 /* multibyte.c in Sources */,
+				004B316B22433BBE00621902 /* convert_iconv.c in Sources */,
+				004C3295223A581A00C29695 /* lang_ru.c in Sources */,
+				004C3298223A581A00C29695 /* lang_sk.c in Sources */,
+				004C335C2241DF2A00C29695 /* common.c in Sources */,
+				004C329B223A581A00C29695 /* lang.c in Sources */,
+				004C329A223A581A00C29695 /* lang_lv.c in Sources */,
+				004C325E223A575500C29695 /* convert_extern.c in Sources */,
+				004C3268223A576D00C29695 /* locale_detect.c in Sources */,
+				004C3277223A57E600C29695 /* filters.c in Sources */,
+				004C3272223A57CE00C29695 /* ctype.c in Sources */,
+				004C325F223A575500C29695 /* convert_iconv.c in Sources */,
+				004C329F223A581A00C29695 /* lang_et.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		004C3241223A573200C29695 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				004C324B223A573200C29695 /* libencaTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		004B30C222422F6500621902 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 004B30A822422F6300621902 /* TestEnca */;
+			targetProxy = 004B30C122422F6500621902 /* PBXContainerItemProxy */;
+		};
+		004B30CD22422F6500621902 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 004B30A822422F6300621902 /* TestEnca */;
+			targetProxy = 004B30CC22422F6500621902 /* PBXContainerItemProxy */;
+		};
+		004B30FF224323B400621902 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 004B30F3224323B400621902 /* libenca-mac */;
+			targetProxy = 004B30FE224323B400621902 /* PBXContainerItemProxy */;
+		};
+		004B31682243388600621902 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 004B30F3224323B400621902 /* libenca-mac */;
+			targetProxy = 004B31672243388600621902 /* PBXContainerItemProxy */;
+		};
+		004C3248223A573200C29695 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 004C323B223A573200C29695 /* libenca */;
+			targetProxy = 004C3247223A573200C29695 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		004B30B122422F6300621902 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				004B30B222422F6300621902 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		004B30B622422F6500621902 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				004B30B722422F6500621902 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		004B30D322422F6500621902 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = P8FU724944;
+				INFOPLIST_FILE = TestEnca/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = freeblow.TestEnca;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		004B30D422422F6500621902 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = P8FU724944;
+				INFOPLIST_FILE = TestEnca/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = freeblow.TestEnca;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		004B30D622422F6500621902 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = P8FU724944;
+				INFOPLIST_FILE = TestEncaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = freeblow.TestEncaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TestEnca.app/TestEnca";
+			};
+			name = Debug;
+		};
+		004B30D722422F6500621902 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = P8FU724944;
+				INFOPLIST_FILE = TestEncaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = freeblow.TestEncaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TestEnca.app/TestEnca";
+			};
+			name = Release;
+		};
+		004B30D922422F6500621902 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = P8FU724944;
+				INFOPLIST_FILE = TestEncaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = freeblow.TestEncaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TestEnca;
+			};
+			name = Debug;
+		};
+		004B30DA22422F6500621902 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = P8FU724944;
+				INFOPLIST_FILE = TestEncaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = freeblow.TestEncaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TestEnca;
+			};
+			name = Release;
+		};
+		004B30E522431C7600621902 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = P8FU724944;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SYSTEM_HEADER_SEARCH_PATHS = "";
+			};
+			name = Debug;
+		};
+		004B30E622431C7600621902 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = P8FU724944;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SYSTEM_HEADER_SEARCH_PATHS = "";
+			};
+			name = Release;
+		};
+		004B3106224323B400621902 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = P8FU724944;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				GCC_PREPROCESSOR_DEFINITIONS_NOT_USED_IN_PRECOMPS = (
+					HAVE_GETOPT_H,
+					ENABLE_EXTERNAL,
+					"EXTCONV_DIR=\"/usr/local/libexec/enca/extconv/\"",
+					HAVE_NL_LANGINFO,
+				);
+				HEADER_SEARCH_PATHS = "${SRCROOT}/${TARGETNAME}";
+				INFOPLIST_FILE = "libenca-mac/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				PRODUCT_BUNDLE_IDENTIFIER = "freeblow.libenca-mac";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		004B3107224323B400621902 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = P8FU724944;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				GCC_PREPROCESSOR_DEFINITIONS_NOT_USED_IN_PRECOMPS = (
+					HAVE_GETOPT_H,
+					ENABLE_EXTERNAL,
+					"EXTCONV_DIR=\"/usr/local/libexec/enca/extconv/\"",
+					HAVE_NL_LANGINFO,
+				);
+				HEADER_SEARCH_PATHS = "${SRCROOT}/${TARGETNAME}";
+				INFOPLIST_FILE = "libenca-mac/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				PRODUCT_BUNDLE_IDENTIFIER = "freeblow.libenca-mac";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		004B3109224323B400621902 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = P8FU724944;
+				INFOPLIST_FILE = "libenca-macTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				PRODUCT_BUNDLE_IDENTIFIER = "freeblow.libenca-macTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		004B310A224323B400621902 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = P8FU724944;
+				INFOPLIST_FILE = "libenca-macTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				PRODUCT_BUNDLE_IDENTIFIER = "freeblow.libenca-macTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		004C324E223A573200C29695 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		004C324F223A573200C29695 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		004C3251223A573200C29695 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = P8FU724944;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = libenca/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				"MTL_ENABLE_DEBUG_INFO[arch=*]" = HAVE_CONFIG_H;
+				PRODUCT_BUNDLE_IDENTIFIER = freeblow.libenca;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)-ios";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		004C3252223A573200C29695 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = P8FU724944;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = libenca/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				PRODUCT_BUNDLE_IDENTIFIER = freeblow.libenca;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)-ios";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		004C3254223A573200C29695 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = P8FU724944;
+				INFOPLIST_FILE = libencaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = freeblow.libencaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		004C3255223A573200C29695 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = P8FU724944;
+				INFOPLIST_FILE = libencaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = freeblow.libencaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		004B30D222422F6500621902 /* Build configuration list for PBXNativeTarget "TestEnca" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				004B30D322422F6500621902 /* Debug */,
+				004B30D422422F6500621902 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		004B30D522422F6500621902 /* Build configuration list for PBXNativeTarget "TestEncaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				004B30D622422F6500621902 /* Debug */,
+				004B30D722422F6500621902 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		004B30D822422F6500621902 /* Build configuration list for PBXNativeTarget "TestEncaUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				004B30D922422F6500621902 /* Debug */,
+				004B30DA22422F6500621902 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		004B30E422431C7600621902 /* Build configuration list for PBXNativeTarget "test-mac-enca" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				004B30E522431C7600621902 /* Debug */,
+				004B30E622431C7600621902 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		004B3105224323B400621902 /* Build configuration list for PBXNativeTarget "libenca-mac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				004B3106224323B400621902 /* Debug */,
+				004B3107224323B400621902 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		004B3108224323B400621902 /* Build configuration list for PBXNativeTarget "libenca-macTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				004B3109224323B400621902 /* Debug */,
+				004B310A224323B400621902 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		004C3236223A573200C29695 /* Build configuration list for PBXProject "libenca" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				004C324E223A573200C29695 /* Debug */,
+				004C324F223A573200C29695 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		004C3250223A573200C29695 /* Build configuration list for PBXNativeTarget "libenca" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				004C3251223A573200C29695 /* Debug */,
+				004C3252223A573200C29695 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		004C3253223A573200C29695 /* Build configuration list for PBXNativeTarget "libencaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				004C3254223A573200C29695 /* Debug */,
+				004C3255223A573200C29695 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 004C3233223A573200C29695 /* Project object */;
+}
